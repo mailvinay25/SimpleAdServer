@@ -52,7 +52,7 @@ public class SimpleAdServerTests {
         MockitoAnnotations.initMocks(this);
         // Setup Spring test in web mode
         this.mockMvc = MockMvcBuilders.webAppContextSetup(applicationContext).build();
-        AdServerInMemoryCache<String, String> cache = new AdServerInMemoryCache<>(600, 1000);
+        AdServerInMemoryCache<String, String> cache = new AdServerInMemoryCache<>(100, 1000);//The cache cleans up every 100 seconds and can hold a max of 1000 ad campaigns 
         applicationContext.getServletContext().setAttribute("cache", cache);
     }
 
