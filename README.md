@@ -30,7 +30,7 @@ The tests verify that the code meets the functional requirements of the web appl
 ####################### Deploying and Running the web application####################### 
 
 For development of this web application, GlassFish 4.0 application server was used. There is a "SimpleAdServer.war" file
-in "dist" for convenience. It can be deployed on any web server like "Tomcat" or application server like Glassfish.
+in "dist" for convenience. It can be deployed on any web server like "Tomcat" or application server like "Glassfish".
 
 The following are the instructions for deploying and running the web application on Glassfish server assuming glassfish server is installed.
 
